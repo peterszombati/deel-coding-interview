@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"module": "es6",
+		"noImplicitAny": false,
+		"removeComments": true,
+		"esModuleInterop": true,
+		"preserveConstEnums": true,
+		"sourceMap": false,
+		"strictNullChecks": true,
+		"allowImportingTsExtensions": true,
+		"target": "es6",
+		"experimentalDecorators": true,
+		"typeRoots": ["./node_modules/@types"],
+		"lib": ["es2017", "dom", "esnext"],
+		"moduleResolution": "node",
+		"outDir": "build",
+    	"allowSyntheticDefaultImports": true
+    },
+	"ts-node": {
+		"esm": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		".idea",
+		"/node_modules",
+		"**/*.d.ts"
+	]
+}
