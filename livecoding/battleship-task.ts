@@ -5,8 +5,8 @@ export function battleship(inp: (0|1)[][]) {
 
     for (let y = 0; y < map.length; y++) {
         for (let x = 0; x < map.length; x++) {
-            if (inp[y][x] === 1) {
-                const result = findShip(y, x, inp)
+            if (map[y][x] === 1) {
+                const result = findShip(y, x, map)
                 if (result.y) {
                     ships.push({
                         start: {
